@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css">
+<style>
+  body { font-family: 'Poppins', sans-serif; background: #f5f7fa; padding: 20px; text-align: center; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
+  .card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer; transition: 0.3s; }
+  .card:hover { transform: translateY(-5px); background: #2a3f54; color: white; }
+  .card i { font-size: 40px; color: #2a3f54; }
+  .card:hover i { color: white; }
+  h2 { color: #2a3f54; margin-bottom: 30px; }
+</style>
+</head>
+<body>
+
+<h2>Painel de Gestão e Dados</h2>
+
+<div class="cards">
+  <div class="card" onclick="location.href='URL_DA_SUA_OUVIDORIA'">
+    <i class="ri-customer-service-2-line"></i>
+    <h3>Ouvidoria</h3>
+    <p>Relatos e sugestões.</p>
+  </div>
+
+  <div class="card" onclick="location.href='URL_DAS_VISITAS'">
+    <i class="ri-eye-line"></i>
+    <h3>Visitas Supervisão</h3>
+    <p>Relatórios de acompanhamento.</p>
+  </div>
+
+  <div class="card" onclick="location.href='URL_DA_SUA_PLANILHA'">
+    <i class="ri-pie-chart-line"></i>
+    <h3>Indicadores</h3>
+    <p>Dados consolidados da escola.</p>
+  </div>
+</div>
+
+</body>
+</html>
